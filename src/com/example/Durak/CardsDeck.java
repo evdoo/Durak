@@ -12,7 +12,7 @@ public class CardsDeck {
 
     /*
     Suits: "Spades", "Hearts", "Clubs", "Diamonds".
-    Degrees: 11 - "valet", 12 - "dama", 13 - "king", 14 - "tuz".
+    Degrees: 11 - "Jack", 12 - "Dame", 13 - "King", 14 - "Ace".
      */
     public CardsDeck() {
         ArrayList<Cards> cartsDeck = new ArrayList<Cards>();
