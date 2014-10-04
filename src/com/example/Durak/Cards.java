@@ -12,11 +12,11 @@ public class Cards {
         this.suit = suit;
     }
 
-    public int getDegrees(Cards card) {
-        return card.degrees;
+    public int getDegrees() {
+        return degrees;
     }
 
-    public String getSuit(Cards card) {
-        return card.suit;
+    public String getSuit() {
+        return suit;
     }
 }

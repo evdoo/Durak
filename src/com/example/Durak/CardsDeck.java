@@ -1,6 +1,7 @@
 package com.example.Durak;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by Olga on 03.10.2014.
@@ -9,11 +10,13 @@ public class CardsDeck {
     private final int cardsDeckSize = 36;
     private final int minDegrees = 6;
     private final int maxDegrees = 14;
+    private Cards trumpCard;
 
     /*
     Suits: "Spades", "Hearts", "Clubs", "Diamonds".
     Degrees: 11 - "Jack", 12 - "Dame", 13 - "King", 14 - "Ace".
      */
+
     public CardsDeck() {
         ArrayList<Cards> cartsDeck = new ArrayList<Cards>();
         String[] suits = {"Spades", "Hearts", "Clubs", "Diamonds"};
@@ -27,5 +30,15 @@ public class CardsDeck {
             }
             k++;
         }
+        mixedCardDeck(cartsDeck);
+    }
+
+    public Cards getTrumpCard(ArrayList<Cards> cardDeck) {
+        trumpCard = cardDeck.get(0);
+        return trumpCard;
+    }
+
+    public void mixedCardDeck(ArrayList<Cards> cardDeck) {
+        Collections.shuffle(cardDeck);
     }
 }

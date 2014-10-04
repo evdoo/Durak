@@ -12,4 +12,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
+
+    public void takeMove(Player player1, Player player2, CardsDeck cardDeck) {
+        if (player1.getFirstMove()) {
+
+        }
+    }
 }
