@@ -7,7 +7,7 @@ import java.util.Collections;
  * Created by Olga on 03.10.2014.
  */
 public class CardsDeck {
-    private final int cardsDeckSize = 36;
+    private final int cardsDeckSize = 10;
     private final int minDegrees = 6;
     private final int maxDegrees = 14;
     private Cards trumpCard;
@@ -17,7 +17,7 @@ public class CardsDeck {
     Degrees: 11 - "Jack", 12 - "Dame", 13 - "King", 14 - "Ace".
      */
 
-    public CardsDeck() {
+    public ArrayList<Cards> makeNewCardsDeck() {
         ArrayList<Cards> cartsDeck = new ArrayList<Cards>();
         String[] suits = {"Spades", "Hearts", "Clubs", "Diamonds"};
 
@@ -30,7 +30,7 @@ public class CardsDeck {
             }
             k++;
         }
-        mixedCardDeck(cartsDeck);
+        return cartsDeck;
     }
 
     public Cards getTrumpCard(ArrayList<Cards> cardDeck) {
